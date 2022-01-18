@@ -1,7 +1,7 @@
 # The Cloud SQL postgres
 resource "google_sql_database_instance" "label-studio-postgres" {
-  name             = "label-studio-sql"
-  database_version = "POSTGRES_13"
+  name             = "label-studio-db"
+  database_version = "POSTGRES_14"
   region           = var.region
 
   settings {
